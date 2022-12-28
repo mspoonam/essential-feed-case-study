@@ -56,6 +56,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                         
         return httpClient
             .getPublisher(url: remoteURL)
+            .delay(for: 2, scheduler: DispatchQueue.main)
             .tryMap(FeedItemsMapper.map)
             .caching(to: localFeedLoader)
             .fallback(to: localFeedLoader.loadPublisher)
@@ -66,6 +67,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         return localImageLoader
             .loadImageDataPublisher(from: url)
+            .delay(for: 2, scheduler: DispatchQueue.main)
             .fallback(to: { [httpClient] in
                 httpClient
                     .getPublisher(url: url)
