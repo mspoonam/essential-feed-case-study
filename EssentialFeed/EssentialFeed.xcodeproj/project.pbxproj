@@ -94,6 +94,7 @@
 		08F8822D236499B200CAEE16 /* FeedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F8822C236499B200CAEE16 /* FeedCache.swift */; };
 		CACBC438295C6EE800D8F4A8 /* SharedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACBC437295C6EE800D8F4A8 /* SharedLocalizationTests.swift */; };
 		CACBC439295C6F9500D8F4A8 /* Shared.strings in Resources */ = {isa = PBXBuildFile; fileRef = CACBC43B295C6F9500D8F4A8 /* Shared.strings */; };
+		CAE7583D295D20580025B9E3 /* SharedLocalizationTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7583C295D20580025B9E3 /* SharedLocalizationTestHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -222,6 +223,7 @@
 		CACBC43A295C6F9500D8F4A8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Shared.strings; sourceTree = "<group>"; };
 		CACBC43C295C6F9800D8F4A8 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Shared.strings; sourceTree = "<group>"; };
 		CACBC43D295C6FA500D8F4A8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Shared.strings"; sourceTree = "<group>"; };
+		CAE7583C295D20580025B9E3 /* SharedLocalizationTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocalizationTestHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -607,6 +609,7 @@
 			children = (
 				08EF9D16250BB0E4004539C2 /* LoadResourcePresenterTests.swift */,
 				CACBC437295C6EE800D8F4A8 /* SharedLocalizationTests.swift */,
+				CAE7583C295D20580025B9E3 /* SharedLocalizationTestHelpers.swift */,
 			);
 			path = "Shared Presentation";
 			sourceTree = "<group>";
@@ -932,6 +935,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				081C0DB122491E1200AC754E /* FeedCacheTestHelpers.swift in Sources */,
+				CAE7583D295D20580025B9E3 /* SharedLocalizationTestHelpers.swift in Sources */,
 				08805A19233A9F8600509F19 /* URLProtocolStub.swift in Sources */,
 				081C0DAF22491A2400AC754E /* ValidateFeedCacheUseCaseTests.swift in Sources */,
 				087148AC232BDF6900D6BE1A /* FeedPresenterTests.swift in Sources */,
