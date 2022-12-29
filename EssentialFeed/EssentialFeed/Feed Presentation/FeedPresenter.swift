@@ -49,6 +49,6 @@ public final class FeedPresenter {
 	}
     
     public static func map(with feed: [FeedImage]) -> FeedViewModel {
-        FeedViewModel(feed: [feed])
+        FeedViewModel(feed: feed)
     }
 }
