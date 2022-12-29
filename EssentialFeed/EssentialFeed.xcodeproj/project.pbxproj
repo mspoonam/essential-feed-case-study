@@ -95,6 +95,8 @@
 		CACBC438295C6EE800D8F4A8 /* SharedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACBC437295C6EE800D8F4A8 /* SharedLocalizationTests.swift */; };
 		CACBC439295C6F9500D8F4A8 /* Shared.strings in Resources */ = {isa = PBXBuildFile; fileRef = CACBC43B295C6F9500D8F4A8 /* Shared.strings */; };
 		CAE7583D295D20580025B9E3 /* SharedLocalizationTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7583C295D20580025B9E3 /* SharedLocalizationTestHelpers.swift */; };
+		CAE7583F295D22670025B9E3 /* ResourceLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7583E295D22670025B9E3 /* ResourceLoadingView.swift */; };
+		CAE75841295D4B3C0025B9E3 /* ResourceErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE75840295D4B3C0025B9E3 /* ResourceErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -224,6 +226,8 @@
 		CACBC43C295C6F9800D8F4A8 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Shared.strings; sourceTree = "<group>"; };
 		CACBC43D295C6FA500D8F4A8 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Shared.strings"; sourceTree = "<group>"; };
 		CAE7583C295D20580025B9E3 /* SharedLocalizationTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocalizationTestHelpers.swift; sourceTree = "<group>"; };
+		CAE7583E295D22670025B9E3 /* ResourceLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoadingView.swift; sourceTree = "<group>"; };
+		CAE75840295D4B3C0025B9E3 /* ResourceErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -618,6 +622,8 @@
 			isa = PBXGroup;
 			children = (
 				08EF9D19250BB15C004539C2 /* LoadResourcePresenter.swift */,
+				CAE7583E295D22670025B9E3 /* ResourceLoadingView.swift */,
+				CAE75840295D4B3C0025B9E3 /* ResourceErrorView.swift */,
 				CACBC43B295C6F9500D8F4A8 /* Shared.strings */,
 			);
 			path = "Shared Presentation";
@@ -900,6 +906,7 @@
 				08285AFB228C17B8000A8987 /* CoreDataHelpers.swift in Sources */,
 				08C0880E21E4EF2900ACFB30 /* FeedItemsMapper.swift in Sources */,
 				087148C4232BFCF100D6BE1A /* FeedImageViewModel.swift in Sources */,
+				CAE75841295D4B3C0025B9E3 /* ResourceErrorView.swift in Sources */,
 				08E546CC24F9631300C64FAE /* FeedImageDataMapper.swift in Sources */,
 				08E5941522523FCC00E2D213 /* FeedCachePolicy.swift in Sources */,
 				08346CF224F93EC600A9F17C /* ImageComment.swift in Sources */,
@@ -917,6 +924,7 @@
 				08C4E988233E13CC00D939F8 /* FeedImageDataStore.swift in Sources */,
 				087148B6232BEAAF00D6BE1A /* FeedPresenter.swift in Sources */,
 				0844769121FCBE7D00439BE9 /* URLSessionHTTPClient.swift in Sources */,
+				CAE7583F295D22670025B9E3 /* ResourceLoadingView.swift in Sources */,
 				08897BEF233A1C8E0029F5E4 /* HTTPURLResponse+StatusCode.swift in Sources */,
 				08285AFD228C1843000A8987 /* ManagedCache.swift in Sources */,
 				08285AF1228BF91E000A8987 /* CoreDataFeedStore.swift in Sources */,
