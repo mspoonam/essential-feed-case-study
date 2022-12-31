@@ -5,5 +5,5 @@
 import Foundation
 
 public protocol ResourceLoadingView {
-    func display(_ viewModel: FeedLoadingViewModel)
+    func display(_ viewModel: ResourceLoadingViewModel)
 }
