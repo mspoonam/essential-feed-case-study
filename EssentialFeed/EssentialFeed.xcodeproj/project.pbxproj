@@ -104,6 +104,7 @@
 		CAE4AB03296078A100C0965D /* ImageComments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE4AB02296078A100C0965D /* ImageComments.storyboard */; };
 		CAE4AB072960826A00C0965D /* ImageCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4AB062960826A00C0965D /* ImageCommentCell.swift */; };
 		CAE4AB092960872C00C0965D /* snapshots in Resources */ = {isa = PBXBuildFile; fileRef = CAE4AB082960872C00C0965D /* snapshots */; };
+		CAE4AB0D2960CE9400C0965D /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4AB0C2960CE9400C0965D /* CellController.swift */; };
 		CAE7583D295D20580025B9E3 /* SharedLocalizationTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7583C295D20580025B9E3 /* SharedLocalizationTestHelpers.swift */; };
 		CAE7583F295D22670025B9E3 /* ResourceLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7583E295D22670025B9E3 /* ResourceLoadingView.swift */; };
 		CAE75841295D4B3C0025B9E3 /* ResourceErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE75840295D4B3C0025B9E3 /* ResourceErrorView.swift */; };
@@ -247,6 +248,7 @@
 		CAE4AB02296078A100C0965D /* ImageComments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageComments.storyboard; sourceTree = "<group>"; };
 		CAE4AB062960826A00C0965D /* ImageCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentCell.swift; sourceTree = "<group>"; };
 		CAE4AB082960872C00C0965D /* snapshots */ = {isa = PBXFileReference; lastKnownFileType = folder; path = snapshots; sourceTree = "<group>"; };
+		CAE4AB0C2960CE9400C0965D /* CellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
 		CAE7583C295D20580025B9E3 /* SharedLocalizationTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocalizationTestHelpers.swift; sourceTree = "<group>"; };
 		CAE7583E295D22670025B9E3 /* ResourceLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoadingView.swift; sourceTree = "<group>"; };
 		CAE75840295D4B3C0025B9E3 /* ResourceErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceErrorView.swift; sourceTree = "<group>"; };
@@ -705,6 +707,7 @@
 			isa = PBXGroup;
 			children = (
 				08BB7EAA22C1425100F8B83C /* ListViewController.swift */,
+				CAE4AB0C2960CE9400C0965D /* CellController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1134,6 +1137,7 @@
 				086AEFBE23A7E75400EE8933 /* UITableView+HeaderSizing.swift in Sources */,
 				08A3F2B2232AA1C200127C15 /* ErrorView.swift in Sources */,
 				08A3F2BB232BA64700127C15 /* UIRefreshControl+Helpers.swift in Sources */,
+				CAE4AB0D2960CE9400C0965D /* CellController.swift in Sources */,
 				08B5EB5022CE328100FE8683 /* UIView+Shimmering.swift in Sources */,
 				0822D0F523058078004B3345 /* UITableView+Dequeueing.swift in Sources */,
 				08BB7EAB22C1425100F8B83C /* ListViewController.swift in Sources */,
