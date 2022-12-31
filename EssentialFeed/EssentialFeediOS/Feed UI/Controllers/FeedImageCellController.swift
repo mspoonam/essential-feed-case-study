@@ -10,7 +10,7 @@ public protocol FeedImageCellControllerDelegate {
     func didCancelImageRequest()
 }
 
-public final class FeedImageCellController: NSObject, CellController, ResourceView, ResourceLoadingView, ResourceErrorView {
+public final class FeedImageCellController: NSObject {
     
     public typealias ResourceViewModel = UIImage
     private let delegate: FeedImageCellControllerDelegate
@@ -22,6 +22,10 @@ public final class FeedImageCellController: NSObject, CellController, ResourceVi
         self.delegate = delegate
     }
     
+}
+
+extension FeedImageCellController: CellController {
+    
     private func cancelLoad() {
         releaseCellForReuse()
         delegate.didCancelImageRequest()
@@ -29,18 +33,6 @@ public final class FeedImageCellController: NSObject, CellController, ResourceVi
     
     public func tableView(_ tableView: UITableView, cancelPrefetchingForRowsAt indexPaths: [IndexPath]) {
         cancelLoad()
-    }
-    
-    public func display(_ viewModel: UIImage) {
-        cell?.feedImageView.setImageAnimated(viewModel)
-    }
-    
-    public func display(_ viewModel: ResourceLoadingViewModel) {
-        cell?.feedImageContainer.isShimmering = viewModel.isLoading
-    }
-    
-    public func display(_ viewModel: ResourceErrorViewModel) {
-        cell?.feedImageRetryButton.isHidden = viewModel.message == nil
     }
     
     private func releaseCellForReuse() {
@@ -62,5 +54,20 @@ public final class FeedImageCellController: NSObject, CellController, ResourceVi
     
     public func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
         delegate.didRequestImage()
+    }
+}
+
+extension FeedImageCellController: ResourceView, ResourceLoadingView, ResourceErrorView {
+    
+    public func display(_ viewModel: UIImage) {
+        cell?.feedImageView.setImageAnimated(viewModel)
+    }
+    
+    public func display(_ viewModel: ResourceLoadingViewModel) {
+        cell?.feedImageContainer.isShimmering = viewModel.isLoading
+    }
+    
+    public func display(_ viewModel: ResourceErrorViewModel) {
+        cell?.feedImageRetryButton.isHidden = viewModel.message == nil
     }
 }
