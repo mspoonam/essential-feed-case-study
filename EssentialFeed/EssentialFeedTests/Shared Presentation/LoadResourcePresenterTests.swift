@@ -41,6 +41,19 @@ class LoadResourcePresenterTests: XCTestCase {
         ])
     }
     
+    func test_didFinishLoadingWithMapperError_displaysLocalisedErrorMessageAndStopsLoading() {
+        let (sut, view) = makeSUT (mapper:  { resource in
+            throw anyNSError()
+        })
+        
+        sut.didFinishLoading(with: "resource")
+        
+        XCTAssertEqual(view.messages, [
+            .display(resourceViewModel: "resource view model"),
+            .display(isLoading: false)
+        ])
+    }
+    
     func test_didFinishLoadingFeedWithError_displaysLocalizedErrorMessageAndStopsLoading() {
         let (sut, view) = makeSUT()
         
