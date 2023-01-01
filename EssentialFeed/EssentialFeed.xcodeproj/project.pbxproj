@@ -103,7 +103,6 @@
 		CAE4AB002960779E00C0965D /* ImageCommentCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4AAFF2960779E00C0965D /* ImageCommentCellController.swift */; };
 		CAE4AB03296078A100C0965D /* ImageComments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE4AB02296078A100C0965D /* ImageComments.storyboard */; };
 		CAE4AB072960826A00C0965D /* ImageCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4AB062960826A00C0965D /* ImageCommentCell.swift */; };
-		CAE4AB092960872C00C0965D /* snapshots in Resources */ = {isa = PBXBuildFile; fileRef = CAE4AB082960872C00C0965D /* snapshots */; };
 		CAE4AB0D2960CE9400C0965D /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE4AB0C2960CE9400C0965D /* CellController.swift */; };
 		CAE7583D295D20580025B9E3 /* SharedLocalizationTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7583C295D20580025B9E3 /* SharedLocalizationTestHelpers.swift */; };
 		CAE7583F295D22670025B9E3 /* ResourceLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7583E295D22670025B9E3 /* ResourceLoadingView.swift */; };
@@ -247,7 +246,6 @@
 		CAE4AAFF2960779E00C0965D /* ImageCommentCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentCellController.swift; sourceTree = "<group>"; };
 		CAE4AB02296078A100C0965D /* ImageComments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageComments.storyboard; sourceTree = "<group>"; };
 		CAE4AB062960826A00C0965D /* ImageCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCommentCell.swift; sourceTree = "<group>"; };
-		CAE4AB082960872C00C0965D /* snapshots */ = {isa = PBXFileReference; lastKnownFileType = folder; path = snapshots; sourceTree = "<group>"; };
 		CAE4AB0C2960CE9400C0965D /* CellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
 		CAE7583C295D20580025B9E3 /* SharedLocalizationTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocalizationTestHelpers.swift; sourceTree = "<group>"; };
 		CAE7583E295D22670025B9E3 /* ResourceLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoadingView.swift; sourceTree = "<group>"; };
@@ -758,7 +756,6 @@
 		CAE4AAFA2960758100C0965D /* Image Comments UI */ = {
 			isa = PBXGroup;
 			children = (
-				CAE4AB082960872C00C0965D /* snapshots */,
 				CAE4AAFB296075AB00C0965D /* ImageCommentsSnapshotTests.swift */,
 			);
 			path = "Image Comments UI";
@@ -1025,7 +1022,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAE4AB092960872C00C0965D /* snapshots in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

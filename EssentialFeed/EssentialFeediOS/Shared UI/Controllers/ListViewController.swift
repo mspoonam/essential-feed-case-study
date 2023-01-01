@@ -34,6 +34,11 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
             container.bottomAnchor.constraint(equalTo: errorView.bottomAnchor, constant: 8)
         ])
         tableView.tableHeaderView = container
+        errorView.onHide = { [weak self] in
+            self?.tableView.beginUpdates()
+            self?.tableView.sizeTableHeaderToFit()
+            self?.tableView.endUpdates()
+        }
     }
     
     public override func viewDidLayoutSubviews() {
