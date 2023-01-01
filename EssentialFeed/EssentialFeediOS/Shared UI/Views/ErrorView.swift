@@ -64,7 +64,7 @@ public final class ErrorView: UIButton {
 		}
 	}
 	
-	@IBAction private func hideMessageAnimated() {
+	@objc private func hideMessageAnimated() {
 		UIView.animate(
 			withDuration: 0.25,
 			animations: { self.alpha = 0 },
