@@ -6,7 +6,7 @@ import UIKit
 import EssentialFeed
 
 public final class ListViewController: UITableViewController, UITableViewDataSourcePrefetching, ResourceLoadingView, ResourceErrorView {
-    @IBOutlet private(set) public var errorView: ErrorView?
+    private(set) public var errorView = ErrorView()
     
     private var loadingControllers = [IndexPath: CellController]()
     
@@ -18,8 +18,22 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
     
     public override func viewDidLoad() {
         super.viewDidLoad()
-        
+        configureErrorView()
         refresh()
+    }
+    
+    private func configureErrorView() {
+        let container = UIView()
+        container.backgroundColor = .clear
+        container.addSubview(errorView)
+        errorView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            errorView.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: 8),
+            container.trailingAnchor.constraint(equalTo: errorView.trailingAnchor, constant: 8),
+            errorView.topAnchor.constraint(equalTo: container.topAnchor, constant: 8),
+            container.bottomAnchor.constraint(equalTo: errorView.bottomAnchor, constant: 8)
+        ])
+        tableView.tableHeaderView = container
     }
     
     public override func viewDidLayoutSubviews() {
@@ -42,7 +56,7 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
     }
     
     public func display(_ viewModel: ResourceErrorViewModel) {
-        errorView?.message = viewModel.message
+        errorView.message = viewModel.message
     }
     
     public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
